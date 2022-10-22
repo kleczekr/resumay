@@ -1,0 +1,37 @@
+#my-name {
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+#my-titles {
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: left;
+}
+#container {
+    padding: 20px;
+    margin: 20px;
+}
+
+#my-photo {
+    max-height: 340px;
+    float: right;
+}
+
+.page-card {
+    margin: 40px;
+    padding: 40px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.mid-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
