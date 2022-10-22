@@ -1,132 +1,233 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.2/d3.js"
-      integrity="sha512-c1CuuvAJrV5Tf0jpwRgeeM6rA5v1/kv7eEzkIO6ARsKq2X9O3GCVGMRUJ76zh/plXad4cq0MYG02TyuXRhM4OQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.js"
-      integrity="sha512-MNW6IbpNuZZ2VH9ngFhzh6cUt8L/0rSVa60F8L22K1H72ro4Ki3M/816eSDLnhICu7vwH/+/yb8oB3BtBLhMsA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
-    <title>RK_Data_YES</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+        <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+                integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                />
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.2/d3.js"
+                integrity="sha512-c1CuuvAJrV5Tf0jpwRgeeM6rA5v1/kv7eEzkIO6ARsKq2X9O3GCVGMRUJ76zh/plXad4cq0MYG02TyuXRhM4OQ=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                ></script>
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.js"
+                integrity="sha512-MNW6IbpNuZZ2VH9ngFhzh6cUt8L/0rSVa60F8L22K1H72ro4Ki3M/816eSDLnhICu7vwH/+/yb8oB3BtBLhMsA=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                ></script>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+                integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                />
+        <script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
+        <title>RK_Data_YES</title>
+    </head>
 
-  <body>
-      <div id="container">
-          <div class="page-card">
-          <div class="row">
-              <div class="nine columns">
-                <h2 id="my-name">Rafal Kleczek</h2>
-                <h3 id="my-titles">Data <span id="changing-requirements">Analyst</span></h3>
+    <body>
+        <div id="container">
+            <div class="page-card">
+                <div class="row">
+                    <div class="nine columns">
+                        <h2 id="my-name">Rafal Kleczek</h2>
+                        <h3 id="my-titles">Data <span id="changing-requirements">Analyst</span></h3>
 
-                <h4>Work Experience</h4>
-                <h5 class="workplace">Artikuno GmBH, Vienna, Austria</h5>
-                <h6>Data Analyst, 06.2021-Present</h6>
-                <ul>
-                    <li>Developing pipelines for obtaining, transforming, storing, and communiating data using a wide variety of technologies:
+                        <h4 class="main-column">Work Experience</h4>
+                        <h5 class="workplace">Artikuno GmBH, Vienna, Austria</h5>
+                        <h6>Data Analyst, 06.2021-Present</h6>
                         <ul>
-                            <li>Python and JavaScript for web scraping, API access, and data processing</li>
-                            <li>MongoDB for data storage</li>
-                            <li>Node.js for back-end development</li>
-                            <li>D3.js and DC.js for data
-                                visualization</li>
+                            <li>Developing pipelines for obtaining, transforming, storing, and communicating data using a wide variety of technologies:
+                                <ul>
+                                    <li>Python and JavaScript for web scraping, API access, and data processing</li>
+                                    <li>MongoDB for data storage</li>
+                                    <li>Node.js for back-end development</li>
+                                    <li>D3.js and DC.js for data
+                                        visualization</li>
+                                </ul>
+                            </li>
+                            <li>Scraping of social media platforms for cold outreach and influencer leads:
+                                <ul>
+                                    <li>Python InstagrAPI by Mikhail Andreev for scraping the mobile version of Instagram</li>
+                                    <li>MongoDB for storing leads, scraped data, and planned outreach</li>
+                                    <li>Node.js for back-end development</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Management of mailing software (SMTP server integration, email warm-up) for mailing campaigns
+                            </li>
+                            <li>Analysis of customer behaviour</li>
+                            <li>E-commerce store profitability research:
+                                <ul>
+                                    <li>Programming custom marketplace scrapers with Python (Requests, BeautifulSoup)</li>
+                                    <li>Data processing with Python (Pandas, Numpy)</li>
+                                    <li>Data visualization with D3.js</li>
+                                </ul>
+                            </li>
+                            <li> Analysis of logistic flows and order route delays:
+                                <ul>
+                                    <li>Shopify API for data access, TrackingMore API for tracking data access, ArcGIS API for geolocation</li>
+                                    <li>MongoDB for data storage</li>
+                                    <li>Node.js for back-end development</li>
+                                    <li>Leaflet and D3.js for analysis and data presentation</li>
+                                </ul>
+                            </li>
+                            <li> Developing custom tools for inventory management and warehouse optimization:
+                                <ul>
+                                    <li>Python for scheduled API data extraction (APIs used: REST, SOAP, GraphQL, Amazon SP-API)</li>
+                                    <li>MongoDB for data storage</li>
+                                    <li>Node.js for back-end development</li>
+                                    <li>D3.js for data visualization</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>Scraping of social media platforms for cold
-                        outreach and influencer leads:
+                        <h5 class="workplace">Beeanco GmbH, Vienna, Austria</h5>
+                        <h6>Business Analyst, 10.2020-06.2021</h6>
                         <ul>
-                            <li>Python InstagrAPI by Mikhail Andreev for scraping the mobile version of Instagram</li>
-                            <li>MongoDB for storing leads, scraped data, and planned outreach</li>
-                            <li>Node.js for back-end development</li>
+                            <li>Customer behaviour analysis (Google Analytics, Python)</li>
+                            <li>Product and vendor analysis (Python, Pandas)</li>
+                            <li>SEO research and strategy implementation</li>
+                            <li>Competition analysis through custom web scraping solutions (Python, Requests, BeautifulSoup)</li>
                         </ul>
-                    </li>
-                    <li>
-                        Management of mailing software (SMTP server integration, email warm-up) for mailing campaigns
-                    </li>
-                    <li>Analysis of customer behaviour</li>
-                    <li>E-commerce store profitability research:
+                        <h5 class="workplace">ISTB, University of Vienna, Austria</h5>
+                        <h6>University Assistant, 06.2017-06.2021</h6>
                         <ul>
-                            <li>Programming custom marketplace scrapers with Python (Requests, BeautifulSoup)</li>
-                            <li>Data processing with Python (Pandas, Numpy)</li>
-                            <li>Data visualization with D3.js</li>
+                            <li>Editorial work and manuscript research</li>
+                            <li>Assisting the work of the department</li>
                         </ul>
-                    </li>
-                    <li> Analysis of logistic flows and order route delays:
+                        <h5>Polish Academy of Sciences, Warsaw, Poland</h5>
+                        <h6>Researcher, 01.2017-06.2017</h6>
                         <ul>
-                            <li>Shopify API for data access, TrackingMore API for tracking data access, ArcGIS API for geolocation</li>
-                            <li>MongoDB for data storage</li>
-                            <li>Node.js for back-end development</li>
-                            <li>Leaflet and D3.js for analysis and data presentation</li>
+                            <li>Editor of academic journal <em>Acta Asiatica
+                                    Varsoviensia</em></li>
+                            <li>Conference organizer, course teacher</li>
                         </ul>
-                    </li>
-                    <li> Developing custom tools for inventory management and warehouse optimization:
+                        <h5>Udacity, remote</h5>
+                        <h6>Student Mentor in Data Analysis, 07.2017-12.2017</h6>
                         <ul>
-                            <li>Python for scheduled API data extraction (APIs used: REST, SOAP, GraphQL, Amazon SP-API)</li>
-                            <li>MongoDB for data storage</li>
-                            <li>Node.js for back-end development</li>
-                            <li>D3.js for data visualization</li>
+                            <li>Assisting students taking the online bootcamp in data analysis</li>
+                            <li>Troubleshooting technical issues and answering inquiries related to the technologies taught in the course: Python, R, SQL, MongoDB, D3.js, Tableau</li>
                         </ul>
-                    </li>
-                </ul>
-                <h5 class="workplace">Beeanco GmbH, Vienna, Austria</h5>
-                <h6>Business Analyst, 10.2020-06.2021</h6>
-                <ul>
-                    <li>Customer behaviour analysis (Google Analytics, Python)</li>
-                    <li>Product and vendor analysis (Python, Pandas)</li>
-                    <li>SEO research and strategy implementation</li>
-                    <li>Competition analysis through custom web scraping solutions (Python, Requests, BeautifulSoup)</li>
-                </ul>
-                <h5 class="workplace">ISTB, University of Vienna, Austria</h5>
-              </div>
-              <div class="three columns">
-                <div id="picture-container">
-                    <img id="my-photo" src="https://deite.org/cv/paszportowe.jpg" alt="Rafal Kleczek" />
+                    </div>
+                    <div class="three columns">
+                        <div id="picture-container">
+                            <img id="my-photo" src="https://deite.org/cv/paszportowe.jpg" alt="Rafal Kleczek" />
+                        </div>
+                        <h4 class="side-column">Stack</h4>
+                        <div id="stack"></div>
+                        <h4 class="side-column">Side projects</h4>
+                        <ul>
+                            <li>Member of the maintenance team of DC.js, a data
+                                visualization library for JavaScript. I am working with
+                                two other maintainers to bring the v5 of the library to
+                                production.</li>
+                            <li>Data Lab at Viena University of Economics and Business: I've lead three groups of students to finish their semester data lab projects as a data coach.</li>
+                            <li>#100DaysOfCode: I've finished the challenge twice.</li>
+                        </ul>
+                        <h4 class="side-column">Education</h4>
+                        <ul>
+                            <li>PhD in South Asian Studies, Vienna 2017-present</li>
+                            <li>PhD in South Asian Studies, Hyderabad 2014-2016</li>
+                            <li>M.A. in Sanskrit Linguistics, Chennai 2012-2014</li>
+                            <li>M.A. in South Asian Studies, Warsaw 2007-2012</li>
+                            <li>B.A. in Anthropology, Warsaw 2009-2012</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-          </div>
+                <hr />
+                <h4>Preferences</h4>
+                <div class="row">
+                    <div class="three columns">
+                        <span id="cloud-icon"></span>
+                        <h5>Cloud applications</h5>
+                        <p>I use Digital Ocean for personal projects (hosting and backend)
+                        and Paperspace for GPU computing.</p>
+                    </div>
+                    <div class="three columns">
+                        <span id="terminal-icon"></span>
+                        <h5>NVIM afficionado</h5>
+                        <p>I heavily configure NVIM for personal projects whenever
+                        possible, but am a power-user of VIM whenever it is necessary to
+                        access remote servers.</p>
+                    </div>
+                    <div class="three columns">
+                        <span id="git-icon"></span>
+                        <h5>Git version control</h5>
+                        <p>I use Git for version control and collaboration, both in my
+                        personal and professional projects.</p>
+                    </div>
+                    <div class="three columns">
+                        <span id="agile-icon"></span>
+                        <h5>Agile development</h5>
+                        <p>Whenever possible, I try to organize my projects according to
+                        Agile methodology.</p>
+                    </div>
+                </div>
 
-          <br />
-          <hr />
-          <div class="row">
-            <div class="four columns left-align">kleczek.r@gmail.com</div>
-            <div class="four columns mid-align">+43 664 951 57 65</div>
-            <div class="four columns right-align">1170, Wien</div>
-          </div>
-          <div class="row">
-            <div class="four columns left-align">
-                <a href="https://deite.org" target="_blank">deite.org</a>
+                <hr />
+                <h4>When away from the screen</h4>
+                <div class="row">
+
+                    <div class="four columns">
+                        <span id="cat-icon">
+                            <h5>Blind cat carer</h5>
+                    </div>
+
+                    <div class="four columns">
+                        <span id="mushroom-icon">
+                            <h5>Mushroom hunter</h5>
+                    </div>
+
+                    <div class="four columns">
+                        <span id="pot-icon">
+                            <h5>Amateur cook</h5>
+                    </div>
+
+                </div>
+                <hr />
+                <h4>Some statistics</h4>
+                <div class="row">
+                    <div class="four columns">
+                        <span id="github-icon"></span>
+                        <h5>GitHub commits past month</h5>
+                    </div>
+                    <div class="four columns">
+                        <span id="screeps-icon"></span>
+                        <h5>Screeps rank in the past month</h5>
+                    </div>
+                    <div class="four columns">
+                        <span id="github-icon"></span>
+                        <h5>CV views in the past month</h5>
+                    </div>
+                </div>
+                <br />
+                <hr />
+                <div class="row">
+                    <div class="four columns left-align">kleczek.r@gmail.com</div>
+                    <div class="four columns mid-align">+43 664 951 57 65</div>
+                    <div class="four columns right-align">1170, Wien</div>
+                </div>
+                <div class="row">
+                    <div class="four columns left-align">
+                        <a href="https://deite.org" target="_blank">deite.org</a>
+                    </div>
+                    <div class="four columns mid-align">
+                        <a href="https://www.linkedin.com/in/rafkle" target="_blank">linkedin.com/in/rafkle/</a>
+                    </div>
+                    <div class="four columns right-align">
+                        <a href="https://www.github.com/kleczekr" target="_blank">github.com/kleczekr</a>
+                    </div>
+                </div>
             </div>
-            <div class="four columns mid-align">
-                <a href="https://www.linkedin.com/in/rafkle" target="_blank">linkedin.com/in/rafkle/</a>
-            </div>
-            <div class="four columns right-align">
-                <a href="https://www.github.com/kleczekr" target="_blank">github.com/kleczekr</a>
-            </div>
-          </div>
         </div>
-        </div>
-      <script type="text/javascript" src="interactions.js">
-  </body>
-</html>
+        <script type="text/javascript" src="interactions.js">
+            </body>
+                </html>

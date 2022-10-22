@@ -10,18 +10,19 @@
     text-align: left;
 }
 #container {
-    padding: 20px;
-    margin: 20px;
+    padding: 30px;
+    margin: 30px;
 }
 
 #my-photo {
     max-height: 340px;
+    max-width: 100%;
     float: right;
 }
 
 .page-card {
-    margin: 40px;
-    padding: 40px;
+    margin: 30px;
+    padding: 30px;
 }
 
 .left-align {
@@ -34,4 +35,25 @@
 
 .right-align {
     text-align: right;
+}
+
+li {
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1em !important;
+}
+
+h4 {
+    font-size: 18px !important;
+}
+
+h5 {
+    font-size: 16px !important;
+}
+
+h6 {
+    font-size: 14px !important;
 }
